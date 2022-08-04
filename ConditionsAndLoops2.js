@@ -1,7 +1,7 @@
 // create a variable called speedLimit and another called mySpeed
 // set their values to numbers between 1 and 100
 let speedLimit = 25;
-let my Speed = 30;
+let mySpeed = 30;
 
 
 // using a conditional, determine if mySpeed is greater than the speedLimit
