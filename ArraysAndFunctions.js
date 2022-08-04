@@ -45,3 +45,4 @@ let array1 = [1, 5, 6, 9, 10, 14];
 // the function should take in two variables as arguments, grossInvoiced and profitMargin
 
 
+// Testing the push!
