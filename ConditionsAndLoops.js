@@ -105,8 +105,11 @@ do{
 } while(iterator <= 50);
 
 // edit the previous do/while loop so that it prints the remainder when the loop number is divided by 4
-do{
-    console.log(iterator % 4);
+iterator = 1;
+do {
+    if(iterator % 4 == 0){
+        console.log(iterator);
+    }
     iterator++;
 } while(iterator <= 50);
 

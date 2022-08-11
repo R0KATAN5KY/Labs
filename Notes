@@ -1,0 +1,49 @@
+// do/while for incrementing:
+do {
+    console.log(userNumber);
+    userNumber = userNumber + 6;
+} while(userNumber <= 100);
+
+// for loop adding cups of rice:
+for (let i = 1; i <= requiredCupsOfRice; i++){
+    console.log("The bowl contains " + i + " cups of rice.");
+}   console.log("We have enough rice!");
+
+// while loop adding cups of rice:
+while(currentCupsOfRice != requiredCupsOfRice){
+    console.log('The bowl contains ' + (++currentCupsOfRice) + ' cups of rice.');
+}
+console.log('We have enough rice!');
+
+
+for(let i = 1; i <= 100; i++){
+    if()
+}
+
+for(let i = 2; i <= 100; i++){
+    if(i % 2 == 0){
+    console.log(`${i} foo`);
+    }
+}
+
+
+// points game:
+for(let i = 0; i < 100 && points < 290; i++){
+    if(points == 125 && pointsReset === false){
+    points = 25;
+    pointsReset = true;
+    }
+    else if(i % 2 == 0){
+        points = points + 5;
+    }
+    else{
+        points = points + 3;
+    }
+    console.log("Turns: " + i + " Score: " + points);
+}
+
+// while loop counter:
+while(countDown >= 3 && countDown < 10){
+    countDown--;
+    console.log(countDown + "..." );
+}   console.log("We have lift off!");
