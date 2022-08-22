@@ -15,9 +15,11 @@ while(currentCupsOfRice != requiredCupsOfRice){
 }
 console.log('We have enough rice!');
 
-
-for(let i = 1; i <= 100; i++){
-    if()
+// count every 3 0 - 99:
+for(let i = 0; i <= 99; i++){
+    if(i % 3 == 0){
+    console.log(i);
+    }
 }
 
 for(let i = 2; i <= 100; i++){
@@ -43,7 +45,120 @@ for(let i = 0; i < 100 && points < 290; i++){
 }
 
 // while loop counter:
-while(countDown >= 3 && countDown < 10){
-    countDown--;
-    console.log(countDown + "..." );
+if(countDown >= 3 && countDown < 10){
+    while(countDown >= 1){
+        console.log(countDown + "..." );
+        countDown--;
+    }
 }   console.log("We have lift off!");
+
+
+
+// user number-100
+let i = userNumber
+if(userNumber >= 1 && userNumber <= 100){
+    while(i <= 100){
+        console.log(i);
+    i++;
+    }
+} else{
+    console.log("Your number was not between 1 and 100.");
+}
+
+
+
+
+
+//ArraysAndFunctions:
+
+Practice 
+
+let customerNames = [];
+customerNames.push('Sam Smith');
+customerNames.push('Tommy Guns');
+
+for(let i = 0; i < customerNames.length; i++){
+   console.log(customerNames[i]);
+}
+
+for(name of customerNames){
+    console.log(name);
+}
+
+
+function myFunction() {
+    for(let i = 0; i < 100; i++){
+        console.log(i);
+    }
+}
+
+myFunction();
+
+function createFullName(firstName, lastName){
+    return firstName + ' ' + lastName;
+} 
+
+let fullName = createFullName('Tom', 'Sawyer');
+console.log("Welcome, " + fullName);
+
+
+let names = ['Sam', 'Tom', 'Eric', 'Sally', 'Nicholas'];
+let lengths = names.map(function(element){
+    return element.length;
+})
+console.log(lengths);
+
+let sum = lengths.reduce(function(accumulator, currentValue){
+    return accumulator + currentValue;
+});
+console.log(sum);
+
+names.forEach(function(element){
+    console.log(element);
+});
+
+let evens = names.filter(function(element){
+    return element.length % 2 == 0;
+})
+console.log(evens);
+
+let removedElement = names.splice(1, 1);
+console.log(removedElement);
+
+
+let dvdPlayer = {
+    height: 3,
+    width: 18,
+    depth: 12,
+    wieght: 7,
+    color: "black",
+    dvdName: "Mulan",
+    printDVDName: function(){
+        console.log(this.dvdName);
+    }
+};
+
+console.log(dvdPlayer.depth);
+dvdPlayer.printDVDName();
+
+
+console.log(2 == "2");
+console.log(2 === "2");
+
+
+// Find circumference with input radius(a):
+
+function findCircumference(a){
+    return 2 * Math.PI * a;
+} console.log(findCircumference(a));
+
+
+
+function checkout(cardBalance, price){
+    if(price > cardBalance){
+    return false;
+    }
+    else{
+        return cardBalance - price;
+    }
+}
