@@ -96,13 +96,12 @@ function willBuyDrink(isHotOutside, moneyInPocket){
     }
 }console.log(willBuyDrink(true, 9.00));
 
-//step 13
+//step 13 
 
-function flatTire(goodTires, flatTires){
-    if(goodTires >= 16 && goodTires <= 18 && flatTires <= 2){
-        return "You're good to go!";
-    } if(flatTires >= 2 && flatTires <= 18){
-        return "Find a shop!";
-    } return "Error"
-} console.log(flatTire(16, 4));
-
+function upperCase(str){
+    let array = str.split(' ');
+    var newArray = [];
+    for(var x = 0; x < array.length; x++){
+        newArray.push(array[x].charAt(0).toUpperCase()+array[x].slice(1));
+    } return newArray.join(' ');
+} console.log(upperCase("is this thing working?"));
